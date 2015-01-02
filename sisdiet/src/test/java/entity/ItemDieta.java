@@ -13,8 +13,7 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class ItemDieta implements Serializable{
-@Id
-@GeneratedValue(strategy=GenerationType.AUTO)
+@Column
 private int idLista;
 @Column
 private Array Alimentos;

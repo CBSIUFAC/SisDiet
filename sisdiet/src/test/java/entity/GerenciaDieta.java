@@ -10,10 +10,11 @@ import javax.persistence.Id;
 
 @Entity
 public class GerenciaDieta implements Serializable{
-@Column
+//@Column
 private int idUsuario;
 @Column
 private int idItem;
+
 
 private Double CalTotal;
 
@@ -69,14 +70,14 @@ switch (usuario.getExercicio()) {
  break;
  case 5:  usuario.setTmb(usuario.getTmb() * 1.9);
  break;
-  }
+ 
+}
 
 }
 
 	public void CalcCal(/*alimentos*/){
 
-		//Pega lista de alimentos e soma a variável de calorias. 
-		//Resultado seria um double.
-		
+	//puxar lista do ItemDieta	
+
 	}
 }

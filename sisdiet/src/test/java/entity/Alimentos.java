@@ -18,6 +18,8 @@ public class Alimentos implements Serializable {
 	private String NomeAlimento;
 	@Column
 	private double QuantAlimento;
+	@Column
+	private double caloria;
 	
 	public Integer getIdAlimento() {
 		return idAlimento;
@@ -43,6 +45,6 @@ public class Alimentos implements Serializable {
 		this.caloria = caloria;
 	}
 
-	private double caloria;
+
 	
 }
