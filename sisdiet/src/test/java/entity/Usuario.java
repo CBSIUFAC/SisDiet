@@ -27,7 +27,23 @@ private double Altura;
 private int Nivel;
 @Column
 private String Sexo;
+@Column
+private double tmb;
+@Column
+private int exercicio;
 
+public int getExercicio() {
+	return exercicio;
+}
+public void setExercicio(int exercicio) {
+	this.exercicio = exercicio;
+}
+public double getTmb() {
+	return tmb;
+}
+public void setTmb(double tmb) {
+	this.tmb = tmb;
+}
 public int getidUser() {
 return idUser;
 }
