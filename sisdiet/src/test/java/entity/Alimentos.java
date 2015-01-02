@@ -17,8 +17,32 @@ public class Alimentos implements Serializable {
 	@Column(nullable=false)
 	private String NomeAlimento;
 	@Column
-	private String DescAlimento;
-	@Column
 	private double QuantAlimento;
+	
+	public Integer getIdAlimento() {
+		return idAlimento;
+	}
+
+	public void setIdAlimento(Integer idAlimento) {
+		this.idAlimento = idAlimento;
+	}
+
+	public String getNomeAlimento() {
+		return NomeAlimento;
+	}
+
+	public void setNomeAlimento(String nomeAlimento) {
+		NomeAlimento = nomeAlimento;
+	}
+
+	public double getCaloria() {
+		return caloria;
+	}
+
+	public void setCaloria(double caloria) {
+		this.caloria = caloria;
+	}
+
+	private double caloria;
 	
 }

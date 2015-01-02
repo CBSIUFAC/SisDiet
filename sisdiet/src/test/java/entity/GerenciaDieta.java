@@ -10,8 +10,7 @@ import javax.persistence.Id;
 
 @Entity
 public class GerenciaDieta implements Serializable{
-@Id
-@GeneratedValue(strategy=GenerationType.AUTO)
+@Column
 private int idUsuario;
 @Column
 private int idItem;
@@ -60,17 +59,17 @@ usuario.setTmb(447.593 + (9.247 * peso) + (3.098 * altura) - (4.330 * idade));
 
 switch (usuario.getExercicio()) {
  
- case 1:  usuario.setTmb(usuario.getTmb() * 1.375);
+ case 1:  usuario.setTmb(usuario.getTmb() * 1.2);
  break;
- case 2:  usuario.setTmb(usuario.getTmb() * 1.55);
+ case 2:  usuario.setTmb(usuario.getTmb() * 1.375);
  break;
- case 3:  usuario.setTmb(usuario.getTmb() * 1.725);
+ case 3:  usuario.setTmb(usuario.getTmb() * 1.55);
  break;
- case 4:  usuario.setTmb(usuario.getTmb() * 1.9);
+ case 4:  usuario.setTmb(usuario.getTmb() * 1.725);
  break;
- default: usuario.setTmb(usuario.getTmb() * 1.2);
+ case 5:  usuario.setTmb(usuario.getTmb() * 1.9);
  break;
- }
+  }
 
 }
 
